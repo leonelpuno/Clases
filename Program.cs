@@ -27,23 +27,23 @@ class Program
             Console.WriteLine("el producto " + producto.Key + " su stock es de " + producto.Value);
         }
 
-        Console.WriteLine("ingrese operacion");
+        Console.WriteLine("Ingrese operacion: ");
         operacion1 = Console.ReadLine();
 
 
         if (operacion1 == "A")
         {
-            Console.WriteLine("ingrese nombre de producto");
+            Console.WriteLine("Ingrese nombre de producto");
             nombreProducto = Console.ReadLine();
 
             if (productos.ContainsKey(nombreProducto))
             {
-                Console.WriteLine("el producto ya existe");
+                Console.WriteLine("El producto ya existe: ");
 
             }
             else 
             {
-                Console.WriteLine("ingrese el stock minimo");
+                Console.WriteLine("Ingrese el stock minimo: ");
                 stockMinimo = Int32.Parse(Console.ReadLine());
 
 
@@ -52,7 +52,7 @@ class Program
 
                 if (stock < stockMinimo)
                 {
-                    Console.WriteLine("el stock es menor al stock minimo");
+                    Console.WriteLine("El stock es menor al stock minimo");
                 }
                 else
                 {
